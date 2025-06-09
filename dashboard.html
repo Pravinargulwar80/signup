@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Welcome to Pravin's Dashboard</h2>
+    <p style="color: white;">You have successfully logged in.</p>
+
+    <button onclick="logout()">Logout
+      <span></span><span></span><span></span><span></span>
+    </button>
+
+    <br><br>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode
+      <span></span><span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <script>
+    function logout() {
+      alert("Logged out successfully!");
+      window.location.href = "index.html";
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+
+  <style>
+    body.dark {
+      background: #000;
+    }
+  </style>
+</body>
+</html>
